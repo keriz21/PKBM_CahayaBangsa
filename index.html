@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PKBM Cahaya Bangsa Palangka Raya</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							"pkbm-blue": "#1a237e",
+							"pkbm-yellow": "#fff176",
+							"pkbm-cream": "#fffce5",
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body class="bg-pkbm-cream min-h-screen">
+		<header class="bg-pkbm-blue text-white shadow-lg sticky top-0 z-50">
+			<div class="container mx-auto px-4 py-3">
+				<div class="flex items-center justify-between flex-wrap">
+					<div class="flex items-center space-x-3">
+						<img
+							src="Logo PKBM.jpg"
+							alt="Logo PKBM"
+							class="h-12 w-12 rounded-full border-2 border-white"
+						/>
+						<h1 class="text-xl md:text-2xl font-bold text-white">
+							PKBM CAHAYA BANGSA
+						</h1>
+					</div>
+					<nav class="hidden md:flex space-x-6">
+						<a
+							href="#sejarah"
+							class="hover:text-pkbm-yellow transition-colors duration-300 font-medium"
+							>Sejarah</a
+						>
+						<a
+							href="#visi"
+							class="hover:text-pkbm-yellow transition-colors duration-300 font-medium"
+							>Visi & Misi</a
+						>
+						<a
+							href="#program"
+							class="hover:text-pkbm-yellow transition-colors duration-300 font-medium"
+							>Program</a
+						>
+						<a
+							href="#kegiatan"
+							class="hover:text-pkbm-yellow transition-colors duration-300 font-medium"
+							>Kegiatan</a
+						>
+						<a
+							href="#staf"
+							class="hover:text-pkbm-yellow transition-colors duration-300 font-medium"
+							>Staf</a
+						>
+						<a
+							href="#alumni"
+							class="hover:text-pkbm-yellow transition-colors duration-300 font-medium"
+							>Alumni</a
+						>
+						<a
+							href="#galeri"
+							class="hover:text-pkbm-yellow transition-colors duration-300 font-medium"
+							>Galeri</a
+						>
+						<a
+							href="#lokasi"
+							class="hover:text-pkbm-yellow transition-colors duration-300 font-medium"
+							>Kontak</a
+						>
+					</nav>
+					<button
+						id="mobile-menu-btn"
+						class="md:hidden text-white focus:outline-none"
+					>
+						<svg
+							class="w-6 h-6"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M4 6h16M4 12h16M4 18h16"
+							></path>
+						</svg>
+					</button>
+				</div>
+				<!-- Mobile Menu -->
+				<nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+					<div class="flex flex-col space-y-2">
+						<a
+							href="#sejarah"
+							class="hover:text-pkbm-yellow transition-colors duration-300 py-2"
+							>Sejarah</a
+						>
+						<a
+							href="#visi"
+							class="hover:text-pkbm-yellow transition-colors duration-300 py-2"
+							>Visi & Misi</a
+						>
+						<a
+							href="#program"
+							class="hover:text-pkbm-yellow transition-colors duration-300 py-2"
+							>Program</a
+						>
+						<a
+							href="#kegiatan"
+							class="hover:text-pkbm-yellow transition-colors duration-300 py-2"
+							>Kegiatan</a
+						>
+						<a
+							href="#staf"
+							class="hover:text-pkbm-yellow transition-colors duration-300 py-2"
+							>Staf</a
+						>
+						<a
+							href="#alumni"
+							class="hover:text-pkbm-yellow transition-colors duration-300 py-2"
+							>Alumni</a
+						>
+						<a
+							href="#galeri"
+							class="hover:text-pkbm-yellow transition-colors duration-300 py-2"
+							>Galeri</a
+						>
+						<a
+							href="#lokasi"
+							class="hover:text-pkbm-yellow transition-colors duration-300 py-2"
+							>Kontak</a
+						>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<div class="bg-gradient-to-r from-pkbm-yellow to-yellow-300 text-gray-800">
+			<div class="container mx-auto px-4 py-12 md:py-20 text-center">
+				<h2
+					class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 animate-pulse leading-tight"
+				>
+					Selamat Datang di PKBM Cahaya Bangsa
+				</h2>
+				<p
+					class="text-lg sm:text-xl md:text-2xl font-semibold text-gray-700 mb-6 md:mb-0"
+				>
+					Cabang Palangka Raya
+				</p>
+				<div class="mt-6 md:mt-8">
+					<a
+						href="#sejarah"
+						class="inline-block bg-pkbm-blue text-white px-6 md:px-8 py-3 rounded-full hover:bg-blue-800 transition-colors duration-300 font-semibold shadow-lg text-sm md:text-base"
+					>
+						Jelajahi Lebih Lanjut
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<section id="sejarah" class="py-12 md:py-16 bg-white">
+			<div class="container mx-auto px-4">
+				<div class="max-w-4xl mx-auto">
+					<h3
+						class="text-2xl sm:text-3xl md:text-4xl font-bold text-pkbm-blue mb-6 md:mb-8 text-center"
+					>
+						Sejarah dan Pendiri
+					</h3>
+					<div class="space-y-4 md:space-y-6 text-gray-700 leading-relaxed">
+						<div class="bg-gray-50 p-4 md:p-6 rounded-lg shadow-md">
+							<p class="text-base md:text-lg">
+								Pkbm berdiri sejak tahun 2019, didirikan oleh mantan Kepala
+								Dinas Pendidikan Kalimantan Tengah, Bapak Alm. Rangkap Inau.
+								Dimana pada tahun 2019 sudah muncul beberapa berita covid-19
+								yang mana proses belajar mengajar akan terkendala, dan juga
+								anak-anak yang ada di lingkungan sekitar PKBM Cahaya Bangsa yang
+								banyak putus sekolah. Sehingga, membuat Bapak Alm. Rangkap Inau
+								beserta istri beliau untuk tergerak hati untuk mendirikan PKBM
+								Cahaya Bangsa.
+							</p>
+						</div>
+						<div class="bg-gray-50 p-4 md:p-6 rounded-lg shadow-md">
+							<p class="text-base md:text-lg">
+								Tujuan utama beliau mendirikan PKBM Cahaya Bangsa adalah
+								membantu anak-anak (yang putus sekolah) yang berada di sekitar
+								PKBM untuk melanjutkan pendidikan mereka melalui ijazah SD, SMP,
+								dan SMA. Yang diharapkan agar anak-anak tersebut tidak buta
+								aksara maupun angka. Sehingga pada tahun 2019 beliau meminta
+								izin mendirikan PKBM Cahaya Bangsa dan pada tahun 2020 PKBM
+								Cahaya Bangsa resmi berdiri dengan perizinan bangunan dan
+								sebagainya.
+							</p>
+						</div>
+						<div
+							class="bg-pkbm-yellow p-4 md:p-6 rounded-lg shadow-md border-l-4 border-pkbm-blue"
+						>
+							<p class="text-base md:text-lg font-semibold">
+								PKBM Cahaya Bangsa Cabang Palangka Raya didirikan berdasarkan
+								Akta Notaris No. 33 tanggal 29 September 2018 dan resmi
+								beroperasi dengan izin No. 420/24/10/P.PAUD-PNF/PKBM/I/2020.
+								Dibentuk oleh pendiri berkomitmen tinggi menyediakan pendidikan
+								kesetaraan dan keterampilan secara inklusif.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="visi" class="py-12 md:py-16 bg-pkbm-cream">
+			<div class="container mx-auto px-4">
+				<div class="max-w-4xl mx-auto">
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+						<div class="bg-white p-6 md:p-8 rounded-lg shadow-lg">
+							<h3
+								class="text-2xl md:text-3xl font-bold text-pkbm-blue mb-4 md:mb-6 text-center"
+							>
+								Visi
+							</h3>
+							<div
+								class="bg-gradient-to-r from-pkbm-blue to-blue-600 p-4 md:p-6 rounded-lg text-white"
+							>
+								<p class="text-base md:text-lg leading-relaxed text-center">
+									Menjadi lembaga pendidikan non-formal yang menghasilkan
+									masyarakat cerdas dan mandiri di Palangka Raya tahun 2025.
+								</p>
+							</div>
+						</div>
+						<div class="bg-white p-6 md:p-8 rounded-lg shadow-lg">
+							<h3
+								class="text-2xl md:text-3xl font-bold text-pkbm-blue mb-4 md:mb-6 text-center"
+							>
+								Misi
+							</h3>
+							<ul class="space-y-3 md:space-y-4">
+								<li class="flex items-start">
+									<span
+										class="bg-pkbm-blue text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-1 flex-shrink-0"
+										>1</span
+									>
+									<span class="text-gray-700 text-sm md:text-base"
+										>Menyelenggarakan pendidikan kesetaraan.</span
+									>
+								</li>
+								<li class="flex items-start">
+									<span
+										class="bg-pkbm-blue text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-1 flex-shrink-0"
+										>2</span
+									>
+									<span class="text-gray-700 text-sm md:text-base"
+										>Meningkatkan kesejahteraan dan kualitas hidup.</span
+									>
+								</li>
+								<li class="flex items-start">
+									<span
+										class="bg-pkbm-blue text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-1 flex-shrink-0"
+										>3</span
+									>
+									<span class="text-gray-700 text-sm md:text-base"
+										>Mengembangkan pendidikan non-formal yang inovatif.</span
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="program" class="py-12 md:py-16 bg-white">
+			<div class="container mx-auto px-4">
+				<div class="max-w-4xl mx-auto text-center">
+					<h3
+						class="text-2xl sm:text-3xl md:text-4xl font-bold text-pkbm-blue mb-8 md:mb-12"
+					>
+						Program Pendidikan
+					</h3>
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+						<div
+							class="bg-gradient-to-br from-pkbm-yellow to-yellow-300 p-6 md:p-8 rounded-lg shadow-lg"
+						>
+							<div class="text-3xl md:text-4xl mb-4">📚</div>
+							<h4
+								class="text-lg md:text-xl font-bold text-gray-800 mb-3 md:mb-4"
+							>
+								Paket A, B, dan C
+							</h4>
+							<p class="text-gray-700 text-sm md:text-base">
+								Program kesetaraan pendidikan formal untuk berbagai tingkatan
+							</p>
+						</div>
+						<div
+							class="bg-gradient-to-br from-blue-100 to-blue-200 p-6 md:p-8 rounded-lg shadow-lg"
+						>
+							<div class="text-3xl md:text-4xl mb-4">✂️</div>
+							<h4
+								class="text-lg md:text-xl font-bold text-gray-800 mb-3 md:mb-4"
+							>
+								Kerjasama LPK Mandiri
+							</h4>
+							<p class="text-gray-700 text-sm md:text-base">
+								Kursus tata busana untuk pengembangan keterampilan praktis
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="kegiatan" class="py-12 md:py-16 bg-pkbm-cream">
+			<div class="container mx-auto px-4">
+				<div class="max-w-4xl mx-auto">
+					<h3
+						class="text-2xl sm:text-3xl md:text-4xl font-bold text-pkbm-blue mb-8 md:mb-12 text-center"
+					>
+						Data Kegiatan
+					</h3>
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+						<div
+							class="bg-white p-4 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+						>
+							<div class="flex items-center mb-4">
+								<span
+									class="bg-pkbm-blue text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3 flex-shrink-0"
+									>📖</span
+								>
+								<span class="text-base md:text-lg font-semibold text-gray-800"
+									>Kelas reguler Paket A, B, dan C</span
+								>
+							</div>
+						</div>
+						<div
+							class="bg-white p-4 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+						>
+							<div class="flex items-center mb-4">
+								<span
+									class="bg-pkbm-blue text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3 flex-shrink-0"
+									>✂️</span
+								>
+								<span class="text-base md:text-lg font-semibold text-gray-800"
+									>Pelatihan tata busana</span
+								>
+							</div>
+						</div>
+						<div
+							class="bg-white p-4 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+						>
+							<div class="flex items-center mb-4">
+								<span
+									class="bg-pkbm-blue text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3 flex-shrink-0"
+									>💻</span
+								>
+								<span class="text-base md:text-lg font-semibold text-gray-800"
+									>Pelatihan Komputer</span
+								>
+							</div>
+						</div>
+						<div
+							class="bg-white p-4 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+						>
+							<div class="flex items-center mb-4">
+								<span
+									class="bg-pkbm-blue text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3 flex-shrink-0"
+									>🌟</span
+								>
+								<span class="text-base md:text-lg font-semibold text-gray-800"
+									>Pembinaan karakter dan literasi</span
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="staf" class="py-12 md:py-16 bg-white">
+			<div class="container mx-auto px-4">
+				<div class="max-w-6xl mx-auto">
+					<h3
+						class="text-2xl sm:text-3xl md:text-4xl font-bold text-pkbm-blue mb-8 md:mb-12 text-center"
+					>
+						Data Guru dan Staf
+					</h3>
+					<div class="overflow-x-auto shadow-lg rounded-lg">
+						<table class="w-full bg-white min-w-full">
+							<thead class="bg-pkbm-blue text-white">
+								<tr>
+									<th
+										class="px-4 md:px-6 py-3 md:py-4 text-left text-base md:text-lg font-semibold"
+									>
+										Nama
+									</th>
+									<th
+										class="px-4 md:px-6 py-3 md:py-4 text-left text-base md:text-lg font-semibold"
+									>
+										Jabatan
+									</th>
+								</tr>
+							</thead>
+							<tbody class="divide-y divide-gray-200">
+								<tr class="hover:bg-gray-50 transition-colors duration-200">
+									<td
+										class="px-4 md:px-6 py-3 md:py-4 text-gray-800 font-medium text-sm md:text-base"
+									>
+										Wuni William
+									</td>
+									<td
+										class="px-4 md:px-6 py-3 md:py-4 text-gray-600 text-sm md:text-base"
+									>
+										Pembina Yayasan
+									</td>
+								</tr>
+								<tr class="hover:bg-gray-50 transition-colors duration-200">
+									<td
+										class="px-4 md:px-6 py-3 md:py-4 text-gray-800 font-medium text-sm md:text-base"
+									>
+										Istia Meydelina, S.Pd., MA.P
+									</td>
+									<td
+										class="px-4 md:px-6 py-3 md:py-4 text-gray-600 text-sm md:text-base"
+									>
+										Ketua
+									</td>
+								</tr>
+								<tr class="hover:bg-gray-50 transition-colors duration-200">
+									<td
+										class="px-4 md:px-6 py-3 md:py-4 text-gray-800 font-medium text-sm md:text-base"
+									>
+										Hendy Pranata
+									</td>
+									<td
+										class="px-4 md:px-6 py-3 md:py-4 text-gray-600 text-sm md:text-base"
+									>
+										Bendahara
+									</td>
+								</tr>
+								<tr class="hover:bg-gray-50 transition-colors duration-200">
+									<td
+										class="px-4 md:px-6 py-3 md:py-4 text-gray-800 font-medium text-sm md:text-base"
+									>
+										Siti Fadilatul Marifah, S. SOS., S. Pd.
+									</td>
+									<td
+										class="px-4 md:px-6 py-3 md:py-4 text-gray-600 text-sm md:text-base"
+									>
+										Sekretaris
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="alumni" class="py-12 md:py-16 bg-pkbm-cream">
+			<div class="container mx-auto px-4">
+				<div class="max-w-4xl mx-auto text-center">
+					<h3
+						class="text-2xl sm:text-3xl md:text-4xl font-bold text-pkbm-blue mb-6 md:mb-8"
+					>
+						Data Alumni
+					</h3>
+					<div class="bg-white p-6 md:p-8 rounded-lg shadow-lg">
+						<div class="text-4xl md:text-6xl mb-4 md:mb-6">🎓</div>
+						<div
+							class="bg-gradient-to-r from-pkbm-blue to-blue-600 text-white p-4 md:p-6 rounded-lg"
+						>
+							<h4 class="text-xl md:text-2xl font-bold mb-3 md:mb-4">
+								Paket C IPS
+							</h4>
+							<p class="text-base md:text-lg leading-relaxed">
+								97 siswa lulus, mayoritas melanjutkan pendidikan tinggi atau
+								bekerja. Alumni berkontribusi aktif di Kota Palangka Raya.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="galeri" class="py-12 md:py-16 bg-white">
+			<div class="container mx-auto px-4">
+				<div class="max-w-7xl mx-auto">
+					<h3
+						class="text-2xl sm:text-3xl md:text-4xl font-bold text-pkbm-blue mb-6 md:mb-8 text-center"
+					>
+						Galeri Foto
+					</h3>
+					<p class="text-lg md:text-xl text-gray-600 text-center mb-8 md:mb-12">
+						Kegiatan-Kegiatan di PKBM Cahaya Bangsa
+					</p>
+
+					<div
+						class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6"
+					>
+						<div
+							class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+						>
+							<img
+								src="Guru dan Staff.jpg"
+								alt="Guru dan Staf"
+								class="w-full h-48 md:h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+							/>
+							<div
+								class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-end"
+							>
+								<div
+									class="text-white p-3 md:p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+								>
+									<h4 class="font-semibold text-sm md:text-base">
+										Guru dan Staf
+									</h4>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+						>
+							<img
+								src="Kegiatan Uji Kompetensi_.jpg"
+								alt="Kegiatan Uji Kompetensi"
+								class="w-full h-48 md:h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+							/>
+							<div
+								class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-end"
+							>
+								<div
+									class="text-white p-3 md:p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+								>
+									<h4 class="font-semibold text-sm md:text-base">
+										Kegiatan Uji Kompetensi
+									</h4>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+						>
+							<img
+								src="Magang di lkp mandiri.jpg"
+								alt="Kerjasama LPK Mandiri"
+								class="w-full h-48 md:h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+							/>
+							<div
+								class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-end"
+							>
+								<div
+									class="text-white p-3 md:p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+								>
+									<h4 class="font-semibold text-sm md:text-base">
+										Magang di LPK Mandiri
+									</h4>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+						>
+							<img
+								src="ProgrAm PKK Tata busana tahun 2020.jpg"
+								alt="Program PKK Tata Busana"
+								class="w-full h-48 md:h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+							/>
+							<div
+								class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-end"
+							>
+								<div
+									class="text-white p-3 md:p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+								>
+									<h4 class="font-semibold text-sm md:text-base">
+										Program PKK Tata Busana 2020
+									</h4>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+						>
+							<img
+								src="Magang Upr.jpg"
+								alt="Magang UPR"
+								class="w-full h-48 md:h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+							/>
+							<div
+								class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-end"
+							>
+								<div
+									class="text-white p-3 md:p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+								>
+									<h4 class="font-semibold text-xs md:text-sm leading-tight">
+										Kegiatan Kerja Sama Program Magang Mandiri oleh Mahasiswa/i
+										Universitas Palangka Raya
+									</h4>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+						>
+							<img
+								src="Hari Pendidikan.jpg"
+								alt="Hari Pendidikan"
+								class="w-full h-48 md:h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+							/>
+							<div
+								class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-end"
+							>
+								<div
+									class="text-white p-3 md:p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+								>
+									<h4 class="font-semibold text-xs md:text-sm leading-tight">
+										Merayakan Hari Pendidikan Nasional Bersama Mahasiswa Magang
+										Universitas Palangka Raya
+									</h4>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+						>
+							<img
+								src="Senam Pagi.jpg"
+								alt="Senam Pagi"
+								class="w-full h-48 md:h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+							/>
+							<div
+								class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-end"
+							>
+								<div
+									class="text-white p-3 md:p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+								>
+									<h4 class="font-semibold text-sm md:text-base">
+										Senam Pagi Bersama Mahasiswa Magang
+									</h4>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+						>
+							<img
+								src="Perpisahan_.jpg"
+								alt="Perpisahan"
+								class="w-full h-48 md:h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+							/>
+							<div
+								class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-end"
+							>
+								<div
+									class="text-white p-3 md:p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+								>
+									<h4 class="font-semibold text-xs md:text-sm leading-tight">
+										Penyerahan Cindera Mata Oleh Mahasiswa Magang Kepada Pihak
+										PKBM Cahaya Bangsa
+									</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Poster Section -->
+					<div class="mt-12 md:mt-16">
+						<h4
+							class="text-xl md:text-2xl font-bold text-pkbm-blue mb-6 md:mb-8 text-center"
+						>
+							Poster dan Pengumuman
+						</h4>
+						<div
+							class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 max-w-2xl mx-auto"
+						>
+							<div
+								class="bg-gray-50 p-4 md:p-6 rounded-lg shadow-lg text-center"
+							>
+								<img
+									src="Back to School.jpg"
+									alt="Poster Back to School"
+									class="w-full max-w-xs mx-auto rounded-lg shadow-md mb-3 md:mb-4"
+								/>
+								<h5 class="font-semibold text-gray-800 text-sm md:text-base">
+									Poster Back to School
+								</h5>
+							</div>
+							<div
+								class="bg-gray-50 p-4 md:p-6 rounded-lg shadow-lg text-center"
+							>
+								<img
+									src="PPDB.jpg"
+									alt="Poster PPDB"
+									class="w-full max-w-xs mx-auto rounded-lg shadow-md mb-3 md:mb-4"
+								/>
+								<h5 class="font-semibold text-gray-800 text-sm md:text-base">
+									Poster PPDB
+								</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="lokasi" class="py-12 md:py-16 bg-pkbm-blue text-white">
+			<div class="container mx-auto px-4">
+				<div class="max-w-4xl mx-auto text-center">
+					<h3 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 md:mb-12">
+						Alamat & Kontak
+					</h3>
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+						<div
+							class="bg-white bg-opacity-10 p-4 md:p-6 rounded-lg backdrop-blur-sm"
+						>
+							<div class="text-3xl md:text-4xl mb-3 md:mb-4">📍</div>
+							<h4 class="text-lg md:text-xl font-semibold mb-2 md:mb-3">
+								Alamat
+							</h4>
+							<p class="text-sm md:text-lg leading-relaxed">
+								JL Pangeran Samudera III No.07, Kel. Menteng, Kec. Jekan Raya,
+								Palangka Raya, Kalimantan Tengah
+							</p>
+						</div>
+						<div
+							class="bg-white bg-opacity-10 p-4 md:p-6 rounded-lg backdrop-blur-sm"
+						>
+							<div class="text-3xl md:text-4xl mb-3 md:mb-4">✉️</div>
+							<h4 class="text-lg md:text-xl font-semibold mb-2 md:mb-3">
+								Email
+							</h4>
+							<p class="text-sm md:text-lg">
+								<a
+									href="mailto:pkbmcahayabangsapky@gmail.com"
+									class="hover:text-pkbm-yellow transition-colors duration-300 break-all"
+								>
+									pkbmcahayabangsapky@gmail.com
+								</a>
+							</p>
+						</div>
+						<div
+							class="bg-white bg-opacity-10 p-4 md:p-6 rounded-lg backdrop-blur-sm"
+						>
+							<div class="text-3xl md:text-4xl mb-3 md:mb-4">📞</div>
+							<h4 class="text-lg md:text-xl font-semibold mb-2 md:mb-3">
+								Telepon
+							</h4>
+							<div class="space-y-1 md:space-y-2">
+								<p class="text-sm md:text-lg">
+									<a
+										href="tel:082150935622"
+										class="hover:text-pkbm-yellow transition-colors duration-300"
+									>
+										0821 5093 5622
+									</a>
+								</p>
+								<p class="text-sm md:text-lg">
+									<a
+										href="tel:082154600505"
+										class="hover:text-pkbm-yellow transition-colors duration-300"
+									>
+										0821 5460 0505
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Tombol Scroll ke Atas -->
+		<button
+			onclick="scrollToTop()"
+			id="scrollTopBtn"
+			class="fixed bottom-6 md:bottom-8 right-6 md:right-8 bg-pkbm-blue text-white p-3 md:p-4 rounded-full shadow-lg hover:bg-blue-800 transition-all duration-300 transform hover:scale-110 z-50 hidden"
+		>
+			<svg
+				class="w-5 h-5 md:w-6 md:h-6"
+				fill="none"
+				stroke="currentColor"
+				viewBox="0 0 24 24"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="2"
+					d="M5 10l7-7m0 0l7 7m-7-7v18"
+				></path>
+			</svg>
+		</button>
+
+		<!-- Script -->
+		<script>
+			// Mobile menu toggle
+			document
+				.getElementById("mobile-menu-btn")
+				.addEventListener("click", function () {
+					const mobileMenu = document.getElementById("mobile-menu");
+					mobileMenu.classList.toggle("hidden");
+				});
+
+			// Tampilkan tombol saat scroll ke bawah
+			window.onscroll = function () {
+				const btn = document.getElementById("scrollTopBtn");
+				if (document.documentElement.scrollTop > 300) {
+					btn.classList.remove("hidden");
+				} else {
+					btn.classList.add("hidden");
+				}
+			};
+
+			// Fungsi untuk scroll ke atas
+			function scrollToTop() {
+				window.scrollTo({ top: 0, behavior: "smooth" });
+			}
+
+			// Smooth scrolling untuk navigation links
+			document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+				anchor.addEventListener("click", function (e) {
+					e.preventDefault();
+					const target = document.querySelector(this.getAttribute("href"));
+					if (target) {
+						target.scrollIntoView({
+							behavior: "smooth",
+							block: "start",
+						});
+						// Close mobile menu if open
+						document.getElementById("mobile-menu").classList.add("hidden");
+					}
+				});
+			});
+		</script>
+
+		<footer class="bg-gray-900 text-white py-6 md:py-8">
+			<div class="container mx-auto px-4 text-center">
+				<div
+					class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
+				>
+					<div>
+						<p class="text-base md:text-lg">
+							&copy; 2025 PKBM Cahaya Bangsa Palangka Raya & Nurul
+						</p>
+					</div>
+					<div
+						class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6"
+					>
+						<a
+							href="#sejarah"
+							class="hover:text-pkbm-yellow transition-colors duration-300 text-sm md:text-base"
+							>Tentang Kami</a
+						>
+						<a
+							href="#lokasi"
+							class="hover:text-pkbm-yellow transition-colors duration-300 text-sm md:text-base"
+							>Kontak</a
+						>
+						<a
+							href="#program"
+							class="hover:text-pkbm-yellow transition-colors duration-300 text-sm md:text-base"
+							>Program</a
+						>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
